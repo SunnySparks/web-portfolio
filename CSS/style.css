@@ -5,7 +5,7 @@
 @media (max-width: 768px) {
 
     .background {
-        height: 500px;
+        height: auto;
     }
 
     .bg {
@@ -17,4 +17,46 @@
 
     }
 
+    .blue-bg {
+        background: rgb(73,198,228);
+        background: linear-gradient(309deg, rgba(73,198,228,1) 8%, rgba(138,226,244,0) 100%);
+    }
+
+    .gray-bg {
+        background: #4F5461;
+        border-radius: 6px;
+    }
+
+    .btn {
+        border-radius: 60px;
+    }
+
+    .form-bg {
+        background: rgb(75,204,233);
+        background: linear-gradient(146deg, rgba(75,204,233,1) 0%, rgba(64,82,240,0.15870098039215685) 100%);
+    }
+
+    .line {
+        height: 1px;
+        width: 80%;
+        background-color: black;
+        margin: auto;
+    }
+
+    .gray-card {
+        background-color: #F5F8FD !important;
+        margin: 20px;
+    }
+
+    .cont{
+        transition-duration: 0.9s;
+    }
+
+    .icon-text {
+        font-size: xx-large;
+    }
+
+    .mini-icon-text {
+        font-size: x-large;
+    }
 }
