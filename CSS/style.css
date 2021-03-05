@@ -2,61 +2,128 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.mobile {
+    display: none;
+}
+
+.btn {
+    border-radius: 60px;
+}
+
+.background {
+    height: auto;
+}
+
+.bg {
+    height: auto;
+}
+
+.bg {
+    background-image: url("../IMG/island.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.blue-bg {
+    background: rgb(73,198,228);
+    background: linear-gradient(309deg, rgba(73,198,228,1) 8%, rgba(138,226,244,0) 100%);
+}
+
+.gray-bg {
+    background: #4F5461;
+    border-radius: 6px;
+}
+
+
+.form-bg {
+    background: rgb(75,204,233);
+    background: linear-gradient(146deg, rgba(75,204,233,1) 0%, rgba(64,82,240,0.15870098039215685) 100%);
+}
+
+.line {
+    height: 1px;
+    width: 80%;
+    background-color: black;
+    margin: auto;
+}
+
+.gray-card {
+    background-color: #F5F8FD !important;
+    margin: 20px;
+}
+
+.cont{
+    transition-duration: 0.9s;
+}
+
+.icon-text {
+    font-size: xxx-large;
+}
+
+.mini-icon-text {
+    font-size: xx-large;
+}
+
+.micro-icon-text {
+    font-size: x-large;
+}
+.img-big {
+    height: auto;
+    width: auto;
+}
+
+.img-petit {
+    height: 100px;
+}
+
+.img-medium {
+    height: 200px;
+}
+
 @media (max-width: 768px) {
 
-    .background {
-        height: auto;
-    }
-
     .bg {
-        background-image: url("../IMG/island.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: auto;
-
+    background-image: url("../IMG/island.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     }
 
-    .blue-bg {
-        background: rgb(73,198,228);
-        background: linear-gradient(309deg, rgba(73,198,228,1) 8%, rgba(138,226,244,0) 100%);
+    #desktop {
+        display: none;
     }
 
-    .gray-bg {
-        background: #4F5461;
-        border-radius: 6px;
+    .mobile {
+        display: initial;
     }
 
-    .btn {
-        border-radius: 60px;
-    }
-
-    .form-bg {
-        background: rgb(75,204,233);
-        background: linear-gradient(146deg, rgba(75,204,233,1) 0%, rgba(64,82,240,0.15870098039215685) 100%);
-    }
-
-    .line {
-        height: 1px;
-        width: 80%;
-        background-color: black;
-        margin: auto;
-    }
-
-    .gray-card {
-        background-color: #F5F8FD !important;
-        margin: 20px;
-    }
-
-    .cont{
-        transition-duration: 0.9s;
+    #tablet {
+        display: none;
     }
 
     .icon-text {
         font-size: xx-large;
     }
-
+    
     .mini-icon-text {
         font-size: x-large;
+    }
+    
+    .micro-icon-text {
+        font-size: large;
+    }
+
+    .img-big {
+        height: auto;
+        width: auto;
+    }
+
+    .img-petit {
+        height: 100px;
+    }
+
+    .img-medium {
+        height: 200px;
     }
 }
