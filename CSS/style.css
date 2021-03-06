@@ -6,6 +6,20 @@
     display: none;
 }
 
+#desktop {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "side headr headr headr"
+    "side content content content"
+    "side content content content";
+}
+.side { grid-area: side; }
+.headr { grid-area: headr; }
+.content { grid-area: content; }
+
 .btn {
     border-radius: 60px;
 }
@@ -15,7 +29,7 @@
 }
 
 .bg {
-    height: auto;
+
 }
 
 .bg {
@@ -23,6 +37,58 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
+    height: auto;
+    border-bottom-left-radius: 60%;
+}
+
+.bg {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 80%);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4";
+  }
+  .card1 { grid-area: card1; }
+  .card2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0fr 0fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . ."
+      ". . .";
+    grid-area: card2;
+  }
+  .card3 { grid-area: card3; }
+  .card4 { grid-area: card4; }
+
+.card1 {
+    background-image: url("../IMG/p/s1-f.jpg");
+}
+
+.card2 {
+    background-image: url("../IMG/p1/s3-small-f.jpg");
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: auto;
+}
+
+.card-button {
+
 }
 
 .blue-bg {
@@ -68,6 +134,11 @@
 .micro-icon-text {
     font-size: x-large;
 }
+
+.nano-icon-text {
+    font-size: large;
+}
+
 .img-big {
     height: auto;
     width: auto;
@@ -88,6 +159,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border-bottom-left-radius: 0;
+    }
+
+    
+    .bg {
+        clip-path: none;
     }
 
     #desktop {

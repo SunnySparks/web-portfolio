@@ -13,33 +13,81 @@
 </head>
 <body>
     <section id="desktop">
-        <header class="bg roboto p-4">
-            <div class="row background justify-content-around mt-5">
-                <div class="col-2 mt-5">
-                    <div class="d-flex flex-column justify-content-start align-content-start flex-wrap mb-4 ml-5 mt-5">
-                        <div class="d-flex flex-column text-center"><a href="#intro" class="row justify-content-start"><p class="mini-icon-text col">Intro</p><i class="fas fa-laptop-code micro-icon-text col pt-3"></i></a></div>
-                        <div class="d-flex flex-column text-center"><a href="#portfolio" class="row justify-content-start"><p class="mini-icon-text">Porfolio</p><i class="far fa-folder-open micro-icon-text col pt-3"></i></a></div>
-                        <div class="d-flex flex-column text-center"><a href="#about" class="row justify-content-start"><p class="mini-icon-text">About</p><i class="far fa-address-card micro-icon-text col pt-3"></i></a></div>
-                        <div class="d-flex flex-column text-center"><a href="#contact" class="row justify-content-start"><p class="mini-icon-text">Contact</p><i class="fas fa-mail-bulk micro-icon-text col pt-3"></i></a></div>
-                    </div>
-                </div>
+        <aside class="side">
+            <div class="d-flex flex-column justify-content-start align-content-start flex-wrap mb-4 ml-5 mt-5">
+                <div class="d-flex flex-column text-center"><a href="#intro" class="row justify-content-start"><p class="micro-icon-text col">Intro</p><i class="fas fa-laptop-code nano-icon-text col pt-3"></i></a></div>
+                <div class="d-flex flex-column text-center"><a href="#portfolio" class="row justify-content-start"><p class="micro-icon-text">Porfolio</p><i class="far fa-folder-open nano-icon-text col pt-3"></i></a></div>
+                <div class="d-flex flex-column text-center"><a href="#about" class="row justify-content-start"><p class="micro-icon-text">About</p><i class="far fa-address-card nano-icon-text col pt-3"></i></a></div>
+                <div class="d-flex flex-column text-center"><a href="#contact" class="row justify-content-start"><p class="micro-icon-text">Contact</p><i class="fas fa-mail-bulk nano-icon-text col pt-3"></i></a></div>
+            </div>
+        </aside>
+        <header class="headr">
+        <div class="bg roboto p-4">
+            <div class="row background justify-content-around">
                 <div class="col-10">
-                    <div class="title justify-content-start mt-3">
-                        <h1 class="mb-5 ml-2" style="font-size: 5em;">José Francisco Silva Díaz</h1>
-                        <h2 class="mb-5 mt-3 ml-3 mr-1 mini-icon-text">Software Developer</h2>
+                    <div class="title justify-content-start">
+                        <h1 class="mb-0 ml-2" style="font-size: 3em;">José Francisco Silva Díaz</h1>
+                        <h2 class="mb-0 mt-0 ml-3 mr-1 mini-icon-text">Software Developer</h2>
                     </div>
                     <div class="justify-content-start mr-auto container ml-0">
-                        <p class="mb-5 mt-3 ml-1 mr-5 mini-icon-text">Hi there! welcome to my portfolio page, I am a web developer form Mexico and I can help you create an amazing website, get in contact with me, I'd love to collaborate with you</p>
+                        <p class="mb-5 ml-1 mr-5">Hi there! welcome to my portfolio page, I am a web developer form Mexico and I can help you create an amazing website, get in contact with me, I'd love to collaborate with you</p>
                     </div>
-                    <div class="contact d-flex flex-row justify-content-around mt-2">
-                        <div class="email col-sm-2"><i class="fas fa-mail-bulk icon-text"></i></div>
-                        <div class="github col-sm-2"><i class="fab fa-github icon-text"></i></div>
-                        <div class="linkedin col-sm-2"><i class="fab fa-linkedin icon-text"></i></div>
-                        <div class="twitter col-sm-2"><i class="fab fa-twitter-square icon-text"></i></div>
+                    <div class="contact mb-5">
+                        <div class="contact d-flex flex-row justify-content-end mt-0 ml-5 mr-auto">
+                            <div class="github col-sm-1"><a href="https://github.com/SunnySparks?tab=repositories"><i class="fab fa-github mini-icon-text"></i></a></div>
+                            <div class="linkedin col-sm-1"><a href="https://www.linkedin.com/in/jose-f-silva/"><i class="fab fa-linkedin mini-icon-text"></i></a></div>
+                            <div class="twitter col-sm-1"><a href="https://twitter.com/JosFranT6"><i class="fab fa-twitter-square mini-icon-text"></i></a></div>
+                        </div>
+                        <div><p class="text-right">Take a look at my social networks</p></div>
                     </div>
                 </div>
             </div>
+        </div>
         </header>
+        <article class="content">
+            <a id="portfolio bg-white">
+                <article class="portfolio col-lg-8 ml-auto mr-auto">
+                    <div class="background background">
+                        <h3>My portfolio <i class="far fa-folder-open icon-text"></i></h3>
+                        <div class="card-container">
+                            <div class="card1">                                
+                                <div class="c-body mt-5">
+                                    <h5 class="card-title mb-3">Event ticket buying website</h5>
+                                    <div class="d-flex flex-row justify-content-around mb-5">
+                                        <div class="card-button"><p class="card-text text-light gray-bg p-1">HTML</p></div>
+                                        <div class="card-button"><p class="card-text text-light gray-bg p-1">CSS</p></div>
+                                        <div class="card-button"><p class="card-text text-light gray-bg p-1">JavaScript</p></div>
+                                    </div>
+                                    <a href="p.html" class="btn btn-primary m-2 botton mt-5">See the project</a>
+                                </div>
+                            </div>
+                            <div class="card2">
+                                <div class="c-body mt-5">
+                                    <h5 class="card-title mb-3">A Ruby lint</h5>
+                                    <div class="d-flex flex-row justify-content-around mb-5">
+                                        <div class="card-button"><p class="card-text text-light gray-bg p-1">Ruby</p></div>
+                                        <div class="card-button"><p class="card-text text-light gray-bg p-1">Terminal</p></div>
+                                    </div>
+                                    <a href="p.html" class="btn btn-primary m-2 botton mt-5">See the project</a>
+                                </div>
+                            </div>
+                            <div class="card card3">
+                                <img src="IMG/p2/s1.png" class="card-img-top" alt="Bootstrap responsive website">
+                                <div class="card-body blue-bg p-2 text-center">
+                                    <h5 class="card-title">Bootstrap responsive clone website</h5>
+                                    <div class="d-flex flex-row justify-content-around">
+                                        <div class="card-button"><p class="card-text text-light gray-bg p-1">HTML</p></div>
+                                        <div class="card-button"><p class="card-text text-light gray-bg p-1">CSS</p></div>
+                                        <div class="card-button"><p class="card-text text-light gray-bg p-1">JavaScript</p></div>
+                                    </div>
+                                    <a href="p2.html" class="btn btn-primary m-2 botton">See the project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                </a>
+        </article>
     </section>
 
     <section class="mobile">
