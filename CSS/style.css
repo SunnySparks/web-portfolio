@@ -6,6 +6,13 @@
     display: none;
 }
 
+.blue-font {
+    color: #49c6e4;
+}
+.button-bg {
+background-color: #fa4969;
+}
+
 #desktop {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -14,11 +21,13 @@
   grid-template-areas:
     "side headr headr headr"
     "side content content content"
-    "side content content content";
+    "side content content content"
+    "side kontent kontent kontent";
 }
 .side { grid-area: side; }
 .headr { grid-area: headr; }
 .content { grid-area: content; }
+.kont { grid-area: kontent; }
 
 .btn {
     border-radius: 60px;
@@ -55,16 +64,7 @@
       "card3 card4";
   }
   .card1 { grid-area: card1; }
-  .card2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0fr 0fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      ". . ."
-      ". . .";
-    grid-area: card2;
-  }
+  .card2 { grid-area: card2; }
   .card3 { grid-area: card3; }
   .card4 { grid-area: card4; }
 
@@ -74,6 +74,10 @@
 
 .card2 {
     background-image: url("../IMG/p1/s3-small-f.jpg");
+}
+
+.card3 {
+    background-image: url("../IMG/p2/s1-f.jpg");
 }
 
 .card1,
@@ -87,9 +91,15 @@
     height: auto;
 }
 
-.card-button {
-
+.card-elements {
+    visibility: hidden;
 }
+
+.c-body:hover .card-elements{
+    visibility: visible;
+    transition: 0.5s;
+}
+
 
 .blue-bg {
     background: rgb(73,198,228);
@@ -119,7 +129,7 @@
     margin: 20px;
 }
 
-.cont{
+.kont{
     transition-duration: 0.9s;
 }
 
