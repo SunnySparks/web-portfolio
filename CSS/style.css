@@ -32,7 +32,7 @@ background-color: #fa4969;
 .contct { grid-area: contct;}
 
 .btn {
-    border-radius: 60px;
+    border-radius: 70%;
 }
 
 .background {
@@ -56,7 +56,7 @@ background-color: #fa4969;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 20px 20px;
+    gap: 5% 5%;
     grid-template-areas:
       "card1 card2"
       "card3 card4";
@@ -109,7 +109,7 @@ background-color: #fa4969;
 
 .gray-bg {
     background: #4F5461;
-    border-radius: 6px;
+    border-radius: 6%;
 }
 
 
@@ -121,7 +121,7 @@ background-color: #fa4969;
 }
 
 .line {
-    height: 1px;
+    height: 0.01em;
     width: 100%;
     background-color: black;
     margin: auto;
@@ -129,7 +129,7 @@ background-color: #fa4969;
 
 .gray-card {
     background-color: #F5F8FD !important;
-    margin: 20px;
+    margin: 5%;
 }
 
 .kont{
@@ -138,7 +138,7 @@ background-color: #fa4969;
 }
 
 .content#card-blur.active {
-    filter: blur(20px);
+    filter: blur(1.5rem);
 }
 
 #popup, #pop-up, #poppup {
@@ -199,7 +199,7 @@ background-color: #fa4969;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 0px 0px;
+  gap: 0 0;
   grid-template-areas:
     "carda cardb cardc"
     ". . ."
@@ -213,11 +213,7 @@ background-color: #fa4969;
     float: right;
 }
 
-.diagonal-bg {
-
-}
-
-@media (max-width: 780px) {
+@media (max-width: 44em) {
 
     .bg {
     background-image: url("../IMG/island.jpg");
@@ -262,15 +258,15 @@ background-color: #fa4969;
     }
 
     .img-petit {
-        height: 100px;
+        height: 10em;
     }
 
     .img-medium {
-        height: 200px;
+        height: 20em;
     }
 
     .line {
-        height: 1px;
+        height: 0.01em;
         width: 80%;
         background-color: black;
         margin: auto;
