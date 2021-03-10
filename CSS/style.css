@@ -2,6 +2,10 @@
         font-family: 'Roboto', sans-serif;
 }
 
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
 .mobile {
     display: none;
 }
