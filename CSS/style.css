@@ -1,5 +1,5 @@
 .roboto {
-    font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-serif;
 }
 
 .mobile {
@@ -22,12 +22,14 @@ background-color: #fa4969;
     "side headr headr headr"
     "side content content content"
     "side content content content"
-    "side kontent kontent kontent";
+    "side about about about"
+    "side contct contct contct";
 }
 .side { grid-area: side; }
 .headr { grid-area: headr; }
 .content { grid-area: content; }
-.kont { grid-area: kontent; }
+.about { grid-area: about; }
+.contct { grid-area: contct;}
 
 .btn {
     border-radius: 60px;
@@ -35,10 +37,6 @@ background-color: #fa4969;
 
 .background {
     height: auto;
-}
-
-.bg {
-
 }
 
 .bg {
@@ -100,6 +98,9 @@ background-color: #fa4969;
     transition: 0.5s;
 }
 
+.close {
+    float: left;
+}
 
 .blue-bg {
     background: rgb(73,198,228);
@@ -112,14 +113,17 @@ background-color: #fa4969;
 }
 
 
-.form-bg {
+.diagonal-bg {
     background: rgb(75,204,233);
     background: linear-gradient(146deg, rgba(75,204,233,1) 0%, rgba(64,82,240,0.15870098039215685) 100%);
+    clip-path: polygon(26% 32%, 100% 0, 100% 100%, 0% 100%);
+    height: 30em;
+    
 }
 
 .line {
     height: 1px;
-    width: 80%;
+    width: 100%;
     background-color: black;
     margin: auto;
 }
@@ -131,6 +135,29 @@ background-color: #fa4969;
 
 .kont{
     transition-duration: 0.9s;
+    height: 60%;
+}
+
+.content#card-blur.active {
+    filter: blur(20px);
+}
+
+#popup, #pop-up, #poppup {
+    position:fixed;
+    top: -5%;
+    left: 20%;
+    transform: translate(10%, 10%);
+    width: 60%;
+    height: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.9s;
+}
+
+#popup.active, #pop-up.active, #poppup.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.9s;
 }
 
 .icon-text {
@@ -151,18 +178,47 @@ background-color: #fa4969;
 
 .img-big {
     height: auto;
-    width: auto;
+}
+
+.img-mini {
+    height: 5em;
 }
 
 .img-petit {
-    height: 100px;
+    height: 10em;
+}
+
+.img-small {
+    height: 15em;
 }
 
 .img-medium {
-    height: 200px;
+    height: 25em;
 }
 
-@media (max-width: 768px) {
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "carda cardb cardc"
+    ". . ."
+    ". . .";
+}
+.carda { grid-area: carda; }
+.cardb { grid-area: cardb; }
+.cardc { grid-area: cardc; }
+
+.form-bg {
+    float: right;
+}
+
+.diagonal-bg {
+
+}
+
+@media (max-width: 780px) {
 
     .bg {
     background-image: url("../IMG/island.jpg");
@@ -212,5 +268,12 @@ background-color: #fa4969;
 
     .img-medium {
         height: 200px;
+    }
+
+    .line {
+        height: 1px;
+        width: 80%;
+        background-color: black;
+        margin: auto;
     }
 }

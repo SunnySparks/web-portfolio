@@ -18,7 +18,7 @@
                 <div class="d-flex flex-column text-center"><a href="#intro" class="row justify-content-start"><p class="micro-icon-text col">Intro</p><i class="fas fa-laptop-code nano-icon-text col pt-3"></i></a></div>
                 <div class="d-flex flex-column text-center"><a href="#port" class="row justify-content-start"><p class="micro-icon-text">Porfolio</p><i class="far fa-folder-open nano-icon-text col pt-3"></i></a></div>
                 <div class="d-flex flex-column text-center"><a href="#abt" class="row justify-content-start"><p class="micro-icon-text">About</p><i class="far fa-address-card nano-icon-text col pt-3"></i></a></div>
-                <div class="d-flex flex-column text-center"><a href="#contact" class="row justify-content-start"><p class="micro-icon-text">Contact</p><i class="fas fa-mail-bulk nano-icon-text col pt-3"></i></a></div>
+                <div class="d-flex flex-column text-center"><a href="#kontakt" class="row justify-content-start"><p class="micro-icon-text">Contact</p><i class="fas fa-mail-bulk nano-icon-text col pt-3"></i></a></div>
             </div>
         </aside>
         <header class="headr">
@@ -44,13 +44,12 @@
             </div>
         </div>
         </header>
-        <article class="content">
-            <a id="port bg-white">
-                <article class="portfolio col-lg-8 ml-auto mr-auto">
+        <article class="content" id="card-blur">
+            <a id="bg-white">
                     <div class="background background">
                         <h3>My portfolio <i class="far fa-folder-open icon-text"></i></h3>
                         <div class="card-container">
-                            <div class="card1 pt-1">                                
+                            <div class="card1">                                
                                 <div class="c-body mt-5">
                                         <h5 class="card-title text-white text-center btn button-bg">Event ticket buying website</h5>
                                     <div class="card-elements">
@@ -60,12 +59,12 @@
                                                 <div class="card-button"><p class="card-text text-light gray-bg p-1">CSS</p></div>
                                                 <div class="card-button"><p class="card-text text-light gray-bg p-1">JavaScript</p></div>
                                             </div>
-                                            <a href="p.html" class="btn btn-primary m-2 botton">See the project</a>
+                                            <a href="#" class="btn btn-primary m-2 botton mt-5" onclick="toggle()">See the project</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card2 p-1">
+                            <div class="card2">
                                 <div class="c-body mt-5">
                                         <h5 class="card-title text-white text-center btn button-bg">A Ruby lint</h5>
                                     <div class="card-elements">
@@ -74,7 +73,7 @@
                                                 <div class="card-button"><p class="card-text text-light gray-bg p-1">Ruby</p></div>
                                                 <div class="card-button"><p class="card-text text-light gray-bg p-1">Terminal</p></div>
                                             </div>
-                                            <a href="p.html" class="btn btn-primary m-2 botton">See the project</a>
+                                            <a href="#" class="btn btn-primary m-2 botton mt-5" onclick="toggs()">See the project</a>
                                         </div>
                                     </div>
                                 </div>
@@ -83,73 +82,246 @@
                                 <div class="c-body mt-5">
                                         <h5 class="card-title text-white text-center btn button-bg">Bootstrap responsive clone website</h5>
                                     <div class="card-elements">
+                                        <div class="d-flex flex-column">
                                         <div class="d-flex flex-row justify-content-around mb-5">
                                             <div class="card-button"><p class="card-text text-light gray-bg p-1">HTML</p></div>
                                             <div class="card-button"><p class="card-text text-light gray-bg p-1">CSS</p></div>
-                                            <div class="card-button"><p class="card-text text-light gray-bg p-1">JavaScript</p></div>
+                                            <div class="card-button"><p class="card-text text-light gray-bg p-1">Bootstrap</p></div>
                                         </div>
-                                        <a href="p.html" class="btn btn-primary m-2 botton mt-5">See the project</a>
+                                        <a href="#" class="btn btn-primary m-2 botton mt-5" onclick="toggie()">See the project</a>
                                     </div>
                                 </div>
-
+                            </div>
                             </div>
                         </div>
                     </div>
-                </article>
                 </a>
-            <a id="abt">
-                <article>
-                    <h2>hi</h2>
-                </article>
-            </a>
         </article>
-        <div class="card kont">
-            <div class="d-flex flex-column">
-                <img src="IMG/p/website.png" class="card-img-top" alt="Project Thumbnail">
-            </div>
-            <div class="card-body">
-                <div class="row">
-                <div class="mt-2 mb-2 row justify-content-center flex-wrap">
-                    <div class="col">
-                        <div class="row justify-content-around mt-2 ml-auto mr-auto">
-                            <img src="IMG/p/tablet.png" class="img-medium" alt="Tablet view">
+        <article class="about p-4">
+        <a id="abt">
+            
+                <div class="background m-4">
+                    <h3>About me <i class="far fa-address-card icon-text"></i></h3>
+                    <p class="text-left col-lg-4">I started coding last year, and I've been loving every second of it. I like doing projects that are more visually focused. I'm never scared of making mistakes, that always makes me learn new thing.
+                        Kindly take a look at my projects.
+                        If you like what you see, don't hesitate to contact me.
+                    </p>
+                    <a href="#" class="btn btn-primary">Get my resume</a>
+                </div>
+                <div class="cards-container">
+                    <div class="carda m-4 border-0 gray-card">
+                        <div class="card-body m-3 p-3">
+                            <h5 class="card-title">Languages</h5>
+                            <p class="card-text">Html</p>
+                            <p class="card-text">CSS</p>
+                            <p class="card-text">JavaScript</p>
+                            <p class="card-text">Ruby</p>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="row justify-content-around mt-2 ml-auto mr-auto">
-                            <img src="IMG/p/mobile.png" class="img-medium" alt="Mobile view">
+                    <div class="cardb m-4 border-0 gray-card">
+                        <div class="card-body m-3 p-3">
+                            <h5 class="card-title">Frameworks</h5>
+                            <p class="card-text">Bootstrap</p>
+                            <p class="card-text">Ruby on Rails</p>
                         </div>
                     </div>
-                    <div class="col">
-                        <a href="https://github.com/SunnySparks/HTML-Capstone-Project" class="btn btn-primary m-2 ">
-                            <div class="row">
-                                <div class="col-6 pt-2">See source</div>
-                                <div class="col-6 pt-1"><i class="fab fa-github"></i></div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="https://raw.githack.com/SunnySparks/HTML-Capstone-Project/work-branch/index.html" class="btn btn-primary m-2 ">
-                            <div class="row">
-                                <div class="col-6 pt-2">See live</div>
-                                <div class="col-6 pt-1"><i class="fas fa-desktop"></i></div>
-                            </div>
-                        </a>
+                    <div class="cardc m-4 border-0 gray-card">
+                        <div class="card-body m-3 p-3">
+                            <h5 class="card-title">Skills</h5>
+                            <p class="card-text">Terminal</p>
+                            <p class="card-text">OOP</p>
+                            <p class="card-text">Github</p>
+                        </div>
                     </div>
                 </div>
-                <div class="p-2 text-center mb-1">
-                    <h3 class="card-title">Event ticket buying website</h3>
-                    <div class="d-flex flex-row justify-content-around mb-4 mt-4">
-                        <div class="card-button"><p class="card-text text-light gray-bg p-1">HTML</p></div>
-                        <div class="card-button"><p class="card-text text-light gray-bg p-1">CSS</p></div>
-                        <div class="card-button"><p class="card-text text-light gray-bg p-1">JavaScript</p></div>
+            
+        </a>
+    </article>
+
+        <article class="contct col-lg-12">
+        <a id="kontakt">
+            
+                <div class="contact p-4">
+                    <div class="col-lg-12 background">
+                        <h3 class="m-4">Get in contact with me <i class="fas fa-mail-bulk icon-text"></i></h3>
+                        <p class="text-justify col-lg-4">I'd love to hear from you, if you're interested in collaborating, send me a message. Wheter it is a simple feature or a revamping of your website, I'll be happy to work with you.
+                        </p>
                     </div>
-                    <p>This was first website made entirely by myself, it simulates an event ticket buying site, it consists of three pages, the homepage that has the event's information, the second page is the "about" site, where you can find information about the imaginary event, and the third page includes the ticket buying page, where you can simulate a ticket purchase.</p>
                 </div>
-            </div>
-        </div>
-    </div>
+                <form action="" class="form-bg w-100 p-3">
+                    <div class="form-group">
+                        <div class="row m-2">
+                            <input type="text" class="form-control col m-1" id="formGroupExampleInput" placeholder="Name">
+                            <input type="email" class="form-control col m-1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="row m-2">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                        </div>
+                        <div class="justify-content-between m-2 row">
+                            <button type="submit" class="btn btn-primary mb-2 col-md-2 col">Contact me</button>
+                            <p class="col-md-3 mt-2">josediazt6@outlook.com</p>
+                        </div>
+                    </div>
+                    <div class="contact d-flex flex-row text-right justify-content-end">
+                        <div class="email col-sm-1 mini-icon-text"><i class="fas fa-mail-bulk"></i></div>
+                        <div class="github col-sm-1 mini-icon-text"><i class="fab fa-github"></i></div>
+                        <div class="linkedin col-sm-1 mini-icon-text"><i class="fab fa-linkedin"></i></div>
+                        <div class="twitter col-sm-1 mini-icon-text"><i class="fab fa-twitter-square"></i></div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="text-right">
+                        <p class="text-right">© 2021 Microverse</p>
+                    </div>
+                </form>
+                <div class="diagonal-bg"></div>
+        </a>
+    </article>
     </section>
+
+
+        <article class="popups">
+            <div class="kont" id="popup">
+                <div class="d-flex flex-column top-img">
+                    <a href="#" class="close text-right text-primary icon-text" onclick="toggle()"><i class="fas fa-times-circle"></i></a>
+                    <img src="IMG/p/website-small.png" alt="Project Thumbnail">
+                </div>
+    
+                <div class="bg-white">
+                    <div class="col-lg-12">
+                        <div class="mb-2 row justify-content-center align-items-center flex-wrap ml-auto mr-auto">
+                            <div class="col-md-3">
+                                <div class="row justify-content-around mt-2 ml-auto mr-auto">
+                                    <img src="IMG/p/tablet.png" class="img-petit" alt="Tablet view">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row justify-content-around mt-2 ml-auto mr-auto">
+                                    <img src="IMG/p/mobile.png" class="img-petit" alt="Mobile view">
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="https://github.com/SunnySparks/HTML-Capstone-Project" class="btn btn-sm button-bg m-2 ">
+                                    <div class="row text-white">
+                                        <div class="col-sm-8">See source <i class="fab fa-github"></i></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="https://raw.githack.com/SunnySparks/HTML-Capstone-Project/work-branch/index.html" class="btn btn-sm button-bg m-2 ">
+                                    <div class="row text-white">
+                                        <div class="col-6">See live <i class="fas fa-desktop"></i></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-2 text-center mb-1">
+                            <h3 class="card-title">Event ticket buying website</h3>
+                            <div class="d-flex flex-row justify-content-around mb-4 mt-4">
+                                <div class="card-button"><p class="card-text text-light gray-bg p-1">HTML</p></div>
+                                <div class="card-button"><p class="card-text text-light gray-bg p-1">CSS</p></div>
+                                <div class="card-button"><p class="card-text text-light gray-bg p-1">JavaScript</p></div>
+                            </div>
+                            <div class="p-1">
+                                <p>The purpose of this project is to simulate an event ticket buying site, it consists of three pages, the homepage that has the event's information, the second page is the "about" site, where you can find information about the imaginary event, and the third page includes the ticket buying page, where you can simulate a ticket purchase.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kont" id="pop-up">
+                <div class="d-flex flex-column top-img">
+                    <a href="#" class="close text-right text-primary icon-text" onclick="toggs()"><i class="fas fa-times-circle"></i></a>
+                    <img src="IMG/p1/s1-small.png" class="card-img-top" alt="Project Thumbnail">
+                </div>
+
+                <div class="bg-white">
+                    <div class="col-lg-12">
+                        <div class="mb-2 row justify-content-around align-items-center flex-wrap ml-auto mr-auto">
+                            <div class="col-md-3">
+                                <div class="row justify-content-around mt-2 ml-auto mr-auto">
+                                    <img src="IMG/p1/s3-small.png" class="img-mini" alt="Tablet view">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row justify-content-around mt-2 ml-auto mr-auto">
+                                    <img src="IMG/p1/s2-small.png" class="img-mini" alt="Mobile view">
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="https://github.com/SunnySparks/Ruby-capstone" class="btn btn-lg button-bg m-2 ">
+                                    <div class="row text-white">
+                                        <div class="col-sm-8">See source <i class="fab fa-github"></i></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-2 text-center mb-1">
+                            <h5 class="card-title">A Ruby lint that detects unclosed parentheses, square brackets and curly braces</h5>
+                            <div class="d-flex flex-row justify-content-around mb-4 mt-4">
+                                <div class="card-button"><p class="card-text text-light gray-bg p-1">Ruby</p></div>
+                                <div class="card-button"><p class="card-text text-light gray-bg p-1">Terminal</p></div>
+                            </div>
+                            <div class="p-1">
+                                <p>This terminal Ruby based project's purpose is for it to check for unclosed parentheses, curly braces and aquare brackets in a file of your choice, i'ts helpful when you want to do a quick checkup inside your programs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kont" id="poppup">
+                <div class="d-flex flex-column top-img">
+                    <a href="#" class="close text-right text-primary icon-text" onclick="toggie()"><i class="fas fa-times-circle"></i></a>
+                    <img src="IMG/p2/Website-small.png" class="card-img-top" alt="Project Thumbnail">
+                </div>
+
+                <div class="bg-white">
+                    <div class="col-lg-12">
+                        <div class="mb-2 row justify-content-center align-items-center flex-wrap ml-auto mr-auto">
+                            <div class="col-md-3">
+                                <div class="row justify-content-around mt-2 ml-auto mr-auto">
+                                    <img src="IMG/p2/tablet.png" class="img-petit" alt="Tablet view">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="row justify-content-around mt-2 ml-auto mr-auto">
+                                    <img src="IMG/p2/mobile.png" class="img-petit" alt="Mobile view">
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="https://github.com/SunnySparks/newsweek.com" class="btn btn-sm button-bg m-2 ">
+                                    <div class="row text-white">
+                                        <div class="col-sm-8">See source <i class="fab fa-github"></i></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="https://raw.githack.com/SunnySparks/newsweek.com/master/index.html" class="btn btn-sm button-bg m-2 ">
+                                    <div class="row text-white">
+                                        <div class="col-6">See live <i class="fas fa-desktop"></i></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-2 text-center mb-1">
+                            <h3 class="card-title">newsweek.com clone page</h3>
+                            <div class="d-flex flex-row justify-content-around mb-4 mt-4">
+                                <div class="card-button"><p class="card-text text-light gray-bg p-1">HTML</p></div>
+                                <div class="card-button"><p class="card-text text-light gray-bg p-1">CSS</p></div>
+                                <div class="card-button"><p class="card-text text-light gray-bg p-1">Bootstrap</p></div>
+                            </div>
+                            <div class="p-1">
+                                <p>The purpose of making this clone website is to prove my knowledge on the use of the Bootstrap framework. This is a simple responsive website adjusted to mobile, tablet and desktop view.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </article>
+    
 
     <section class="mobile">
         <header class="bg roboto p-4">
@@ -205,7 +377,7 @@
                         <div class="d-flex flex-row justify-content-around">
                             <div class="card-button"><p class="card-text text-light gray-bg p-1">HTML</p></div>
                             <div class="card-button"><p class="card-text text-light gray-bg p-1">CSS</p></div>
-                            <div class="card-button"><p class="card-text text-light gray-bg p-1">JavaScript</p></div>
+                            <div class="card-button"><p class="card-text text-light gray-bg p-1">Bootstrap</p></div>
                         </div>
                         <a href="p2.html" class="btn btn-primary m-2 botton">See the project</a>
                     </div>
@@ -283,5 +455,25 @@
         </form>
         </a>
     </section>
+    <script type="text/javascript">
+        function toggle(){
+            var blur = document.getElementById('card-blur');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+        function toggs(){
+            var blur = document.getElementById('card-blur');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('pop-up');
+            popup.classList.toggle('active');
+        }
+        function toggie(){
+            var blur = document.getElementById('card-blur');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('poppup');
+            popup.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
