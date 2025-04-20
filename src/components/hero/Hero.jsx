@@ -1,10 +1,11 @@
 import hero from "../../assets/hero.webp";
 import "./styles.scss";
+import { FaGithub } from "react-icons/fa6";
 
 const Hero = () => {
   return (
     <>
-      <div id="heroSeparator">
+      <div id="heroSeparator" className="font1">
         <div id="heroL">
           <img src={hero} alt="" />
         </div>
@@ -18,6 +19,14 @@ const Hero = () => {
               <strong>HTML, CSS, JS, REACT, Wordpress</strong>
             </h2>
             <h4>Personalized Websites</h4>
+          </div>
+          <div id="heroBtn">
+            <a href="https://github.com/SunnySparks" target="_blank">
+              <div id="btnTxt">
+                <h4>See More</h4>
+                <FaGithub />
+              </div>
+            </a>
           </div>
         </div>
       </div>
