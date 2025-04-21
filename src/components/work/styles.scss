@@ -13,11 +13,13 @@ $neon1: #2aeff6;
   }
   #workList {
     padding: 20px;
-    .workCard {
+    a.workCard {
       display: flex;
       flex-direction: column;
       background: #191b1f;
       border-radius: 20px;
+      text-decoration: none;
+      margin: 10px 0;
       .cardImg {
         display: flex;
         margin: 20px;
@@ -52,6 +54,11 @@ $neon1: #2aeff6;
           p {
             font-size: 20px;
           }
+        }
+        .cardFooter {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
         }
       }
       &:hover {
