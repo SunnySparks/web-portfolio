@@ -1,4 +1,5 @@
 import sunshine from "../../assets/sunshine.webp";
+import dash from "../../assets/dashboard.webp";
 import { FaArrowRight } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FaSass } from "react-icons/fa";
@@ -43,7 +44,7 @@ const Work = () => {
             target="_blank"
           >
             <div className="cardImg">
-              <img src={sunshine} alt="My Dashboard" />
+              <img src={dash} alt="My Dashboard" />
             </div>
             <div className="cardTxt">
               <div className="cardTitle">
