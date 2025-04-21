@@ -1,0 +1,73 @@
+$neon1: #2aeff6;
+
+#workCont {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  #workTitle {
+    text-align: center;
+    h2 {
+      color: $neon1;
+      font-size: 40px;
+    }
+  }
+  #workList {
+    padding: 20px;
+    .workCard {
+      display: flex;
+      flex-direction: column;
+      background: #191b1f;
+      border-radius: 20px;
+      .cardImg {
+        display: flex;
+        margin: 20px;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 10px;
+        img {
+          width: 100%;
+          border-radius: 10px;
+          transition: all 0.3s ease-in-out;
+          max-width: 100%;
+        }
+      }
+      .cardTxt {
+        background: #25272a;
+        margin: 10px;
+        border-radius: 20px;
+        padding: 20px;
+        color: #fff;
+        .cardTitle {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          h2 {
+            margin: 0;
+          }
+          svg {
+            transition: all 0.3s ease-in-out;
+          }
+        }
+        .cardWording {
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+      &:hover {
+        .cardImg {
+          img {
+            transform: scale(1.05);
+          }
+        }
+        .cardTxt {
+          .cardTitle {
+            svg {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
