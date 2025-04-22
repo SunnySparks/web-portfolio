@@ -5,7 +5,7 @@ const isGitHubPages = process.env.BUILD_TARGET === "gh-pages";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: isGitHubPages ? "/Sunshine_University/" : "./",
+  base: isGitHubPages ? "/web-portfolio/" : "./",
   plugins: [react()],
   build: {
     outDir: "dist",
